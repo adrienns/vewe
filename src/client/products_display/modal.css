@@ -1,0 +1,93 @@
+.modal-container {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(37, 37, 37, 0.747);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-coloumns {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  margin-top: 43px;
+}
+
+#modal-row {
+  background: white;
+  padding: 50px;
+  width: 350px;
+  height: 450px;
+}
+
+.modal-image {
+  width: 350px;
+  height: 450px;
+}
+.modal-btn {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 5px;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+.modal-btn:hover {
+  background-color: rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+.go-to-cart-btn {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  width: 250px;
+  height: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.go-to-cart-btn:hover {
+  background-color: rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+.item-info {
+  margin: 20px 10px 10px 10px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+#modal-item-name {
+  font-weight: bolder;
+}
+.more-details-text {
+  text-align: center;
+  padding-top: 50px;
+}
+#more-details-text:hover {
+  border-bottom: solid black;
+  border-width: 1px;
+}
+
+.exit-btn:before {
+  content: "\00d7";
+  font-size: 30px;
+  margin-right: 8px;
+  font-weight: 100;
+}
+
+.exit-btn-container {
+  float: right;
+}

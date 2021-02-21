@@ -1,0 +1,155 @@
+:root {
+  --respo-height: 40vw;
+  --respo-width: 30.257vw;
+  --respo-height-large: 30.76vw;
+  --respo-width-large: 23.274vw;
+  --respo-height-small: 56.26vw;
+  --respo-width-small: 43.274vw;
+}
+
+.extra_listitem {
+  width: 24%;
+  list-style: none;
+}
+.jewelery-item {
+  box-shadow: 2px 2px 11px #ccc;
+  margin: 15px 0 200px 0;
+  list-style: none;
+  position: relative;
+  height: var(--respo-height);
+  width: var(--respo-width);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-wrapper {
+  position: relative;
+  height: var(--respo-height);
+  width: var(--respo-width);
+}
+
+.necklaces-img {
+  position: absolute;
+  height: var(--respo-height);
+  width: var(--respo-width);
+}
+
+.product-description:first-child {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.product-description:last-child {
+  margin-top: 21px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.cart_btn {
+  position: absolute;
+  width: var(--respo-width);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0 25px 0;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+}
+
+.cart_btn:hover {
+  background-color: #cbcad6 !important;
+  box-shadow: inset 5px 5px 25px #b1b0bb;
+  color: white;
+
+  opacity: 1;
+}
+.img-placeholder {
+  content: "Placeholder!";
+  width: 100%;
+  height: auto;
+  background-color: rgb(107, 101, 101);
+}
+
+/*CSS Transition Group*/
+
+.hover-transitions-enter {
+  opacity: 0.3;
+  transition: all 500 ease;
+}
+
+.hover-transitions-enter.hover-transitions-enter-active {
+  opacity: 0.4;
+  transition: all 500 ease;
+}
+
+.hover-transitions-exit {
+  opacity: 1;
+}
+
+.hover-transitions-exit.hover-transitions-exit-active {
+  opacity: 1;
+}
+
+.transition-exit-done {
+  opacity: 0.01;
+}
+
+@media only screen and (min-width: 1200px) {
+  .jewelery-item {
+    height: var(--respo-height-large) !important;
+    width: var(--respo-width-large) !important;
+  }
+  .necklaces-img {
+    height: var(--respo-height-large) !important;
+    width: var(--respo-width-large);
+  }
+  .image-wrapper {
+    height: var(--respo-height-large) !important;
+    width: var(--respo-width-large) !important;
+  }
+
+  .cart_btn {
+    width: var(--respo-width-large);
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 565px) {
+  .jewelery-item {
+    height: var(--respo-height-small);
+    width: var(--respo-width-small);
+    font-size: 14px;
+  }
+  .necklaces-img {
+    height: var(--respo-height-small);
+    width: var(--respo-width-small);
+  }
+  .image-wrapper {
+    height: var(--respo-height-small);
+    width: var(--respo-width-small);
+  }
+
+  .cart_btn {
+    display: none;
+  }
+
+  .extra_listitem {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .extra_listitem {
+    display: none;
+  }
+
+  .jewelery-item {
+    font-size: 12px;
+  }
+}

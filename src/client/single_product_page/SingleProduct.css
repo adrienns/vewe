@@ -1,0 +1,245 @@
+.product_wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 155px 30px 20px 30px;
+}
+
+p strong {
+  border-bottom: solid black;
+  border-width: 0.5px;
+}
+
+.product_textbox {
+  margin-left: -24px;
+  width: 382px;
+  height: 550px;
+  text-align: left;
+  /* position: relative; */
+}
+
+.product_textbox_product_name {
+  font-size: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 26px;
+  margin-top: -7px;
+}
+
+.product_textbox_descriptions {
+  font-weight: lighter;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.product_textbook_descriptions p {
+  margin-bottom: 10px;
+}
+
+.more-info-about-shipping:hover {
+  border-bottom: solid black;
+  border-width: 1px;
+}
+
+/*CSS Transition Group*/
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 5000ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
+.sideImageClass {
+  width: 402px;
+  height: auto;
+  margin: 0 100px 0 70px;
+}
+
+.single_product_page_button_container button {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  width: 359px;
+  height: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.single_product_page_button_container button:hover {
+  background-color: rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+.single_product_page_button_container {
+  padding-top: 13px;
+}
+
+/*ResponsiveSingleProductPage*/
+
+.responsive_textbox_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive_product_textbook_descriptions {
+  font-weight: lighter;
+  /* margin-top: 27px; */
+  font-size: 15px;
+  line-height: 28px;
+  margin: 30px 10px 30px 10px;
+  width: 414px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .side_image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 25px -150px;
+  }
+
+  .sideImageClass {
+    margin: 0px 0px 0 0px;
+  }
+
+  .responsive_img_container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side_image_list {
+    margin-right: 15px;
+  }
+
+  .single_product_page_button_container button {
+    width: 380px;
+  }
+
+  .responsive_textbox-price {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 799px) {
+  .side_image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 25px -150px;
+  }
+
+  .sideImageClass {
+    margin: 90px 0px 0 0px;
+  }
+
+  .responsive_img_container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side_image_list {
+    margin-right: 15px;
+  }
+
+  .single_product_page_button_container button {
+    width: 380px;
+  }
+
+  .responsive_textbox-price {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 411px) {
+  .side_image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 25px -113px;
+  }
+
+  .sideImageClass {
+    width: 364px;
+    height: auto;
+    margin: 50px 2px 0 2px;
+  }
+
+  .responsive_img_container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side_image_list {
+    margin-right: 15px;
+  }
+
+  .single_product_page_button_container button {
+    width: 350px;
+  }
+
+  .responsive_textbox-price {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .side_image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 25px -65px;
+  }
+
+  .responsive_img_container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side_image_list {
+    margin-right: 15px;
+  }
+
+  .single_product_page_button_container button {
+    width: 315px;
+  }
+
+  .responsive_textbox-price {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,190 @@
+#site-logo-image {
+  width: 170px;
+  padding-right: 20px;
+  margin: 0 5px 0 5px;
+  padding-left: 20px;
+}
+
+.nav-bar-element {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-element:first-child {
+  flex-grow: 5;
+  justify-content: flex-end;
+}
+
+.nav-bar-element:last-child {
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.nav-bar-element:nth-child(2) {
+  flex-grow: 1;
+}
+
+.shopping-bag-container {
+  align-self: center;
+  margin-right: 15px;
+  margin-bottom: 6px;
+}
+
+.navbar-container {
+  display: flex;
+}
+
+.menu-navigation {
+  flex-grow: 17;
+  margin: 0 80px 0 80px;
+}
+
+.menu-navigation ul {
+  display: flex;
+
+  list-style: none;
+  letter-spacing: 1.5px;
+  font-size: 13.5px;
+}
+/*Navbar hover animation*/
+
+.menu-navigation ul li a {
+  position: relative;
+  text-transform: uppercase;
+  /* border-radius: 50% 0 50% 0; */
+  padding: 10px 15px;
+  transition: 0.5s;
+  color: rgb(73, 71, 71);
+}
+
+.menu-navigation ul li a span {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-navigation ul li span:hover {
+  color: rgb(255, 72, 0);
+}
+
+.menu-navigation ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 80%;
+  background: url(redline5.png);
+
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+.menu-navigation ul li a:hover:before {
+  width: 100%;
+}
+
+.language_bar {
+  list-style: none;
+  display: flex;
+  align-self: center;
+  margin-left: 21px;
+  margin-right: -52px;
+  flex-grow: 1;
+  font-size: 13.5px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.hun-btn:hover {
+  color: black;
+  font-weight: bolder;
+}
+
+.en-btn:hover {
+  color: black;
+  font-weight: bolder;
+}
+
+.nav_bar_shopping_bag {
+  font-size: 19px !important;
+  margin-bottom: -2px;
+  margin-left: 6px;
+}
+
+.hun-btn {
+  border-right: solid rgb(73, 71, 71);
+  margin-right: 5px;
+  border-width: 1px;
+  padding-right: 3px;
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
+/* Navbar responsive design*/
+
+@media only screen and (min-width: 1202px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .hamburger-icon {
+    display: flex;
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 7px;
+  }
+
+  #site-logo-image {
+    margin: -52px 5px 0 5px;
+    padding: 45px;
+  }
+
+  .mobile-shopping-bag-container {
+    margin-top: 7px;
+  }
+  /* Doesnt show the navbar in responsive design*/
+
+  .navbar-container {
+    display: none;
+  }
+
+  .mobile-nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 5px 13px 5px 13px;
+  }
+}
+
+/* Navbar responsive design*/
+
+@media only screen and (max-width: 421px) {
+  .hamburger-icon {
+    display: flex;
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 26px;
+  }
+
+  .responsive-item-counter {
+    margin-right: 6px;
+    font-weight: bolder;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+  .mobile-nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+}

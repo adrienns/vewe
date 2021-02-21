@@ -1,0 +1,31 @@
+.topbar-container {
+  padding: 6px;
+  margin-bottom: 14px;
+  width: 100%;
+  background-color: rgb(62, 73, 94);
+}
+
+.topbar-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.topbar-text > div {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 565px) {
+  .topbar-text {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .topbar-text {
+    font-size: 5px;
+  }
+}

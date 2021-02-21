@@ -1,0 +1,88 @@
+footer {
+  max-width: 100%;
+  border-top: solid rgb(209, 207, 207);
+  border-width: 0.5px;
+  /* background-color: rgb(226, 239, 255); */
+  overflow-x: hidden;
+  max-height: 100%;
+}
+.footer-nav {
+  width: 100%;
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-group-title {
+  font-size: 13.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  list-style: none;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.footer-section li a:hover {
+  font-weight: bolder;
+  border-bottom: solid black;
+  border-width: 1px;
+}
+
+.footer-group-title a {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#footer-company {
+  text-align: center;
+  font-size: 9px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.social_media_icons ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.follow-us-icons-and-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.facebook-icon {
+  margin-left: 10px;
+  font-size: 15px !important;
+}
+
+.instagram-icon {
+  font-size: 15px !important;
+}
+
+.paypal_acceptance_mark img {
+  width: 170px;
+  margin-top: 60px;
+}
+
+.paypal_acceptance_mark {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 299px) {
+  .footer-section li {
+    font-size: 9px;
+  }
+}

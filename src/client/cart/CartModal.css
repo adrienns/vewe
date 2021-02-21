@@ -1,0 +1,140 @@
+.cart-modal-container {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(37, 37, 37, 0.747) !important; */
+}
+.cart-modal-background {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cart-modal-column {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.cart-modal-items-box {
+  overflow: auto;
+  margin-bottom: 250px;
+}
+
+.cart-modal-upper-row {
+  display: flex;
+  margin: 16px;
+  justify-content: space-between;
+}
+.exit-cart-modal-btn:before {
+  content: "\00d7";
+  font-size: 40px;
+  color: black;
+  font-weight: 100;
+}
+
+.cart-modal-img {
+  width: 140px;
+  height: 180px;
+}
+
+.cart-modal-item {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid rgb(187, 183, 183);
+  border-width: 1px;
+  margin: 16px;
+  padding-bottom: 25px;
+  font-size: 16.5px;
+}
+
+.your-cart-text {
+  margin: 16px 0 14px 0;
+  justify-self: start;
+}
+
+.cart-modal-product-info {
+  width: 140px;
+  height: 180px;
+  margin-left: 30px;
+  font-size: 13.5px;
+}
+.cart-modal-name {
+  margin-bottom: 23px;
+  margin-top: 2px;
+}
+
+.cart-modal-price {
+  margin-bottom: 15px;
+}
+.cart-modal-payment-summary {
+  height: 240px;
+  left: 0;
+  right: 0;
+  background-color: rgb(226, 226, 226);
+  position: fixed;
+  bottom: 0;
+}
+
+.cart-modal-btn {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  height: 44px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 13px;
+  margin: 0 11px 0 11px;
+}
+
+.cart-modal-btn:hover {
+  background-color: rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+#cart-modal-continue-shopping-btn {
+  margin-top: 10px;
+}
+
+#cart-modal-continue-shopping-btn:hover {
+  background-color: rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+.empty-shopping-cart-text {
+  font-size: 20px;
+  padding-top: 80px;
+  padding-right: 28px;
+}
+#cart-modal-payment-btn {
+  margin-top: 24px;
+}
+.cart-modal-subtotal-container {
+  margin: 43px 15px 0px 15px;
+}
+
+.modal-total-cart-wrapper h5 {
+  color: rgb(126, 126, 126);
+}
+
+.modal-total-cart-wrapper,
+.modal-shipping-fee-cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 325px) {
+}

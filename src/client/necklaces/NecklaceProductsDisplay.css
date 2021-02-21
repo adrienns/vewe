@@ -1,0 +1,40 @@
+.necklace_container {
+  margin: 0 17px 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.location-param {
+  margin-top: 71px;
+  text-transform: capitalize;
+  margin-left: 19px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.loading-msg {
+  padding-top: 150px;
+  padding-left: 50px;
+}
+
+.error-msg {
+  padding-top: 150px;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+  .location-param {
+    padding-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .location-param {
+    padding-top: 100px;
+  }
+  .location-param {
+    font-size: 12px !important;
+  }
+}

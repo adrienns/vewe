@@ -1,0 +1,20 @@
+.earring_container {
+  margin: 0 17px 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.location-param {
+  margin-top: 71px;
+  text-transform: capitalize;
+  margin-left: 19px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.error-msg {
+  padding-top: 150px;
+  padding-left: 20px;
+}

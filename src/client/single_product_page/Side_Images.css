@@ -1,0 +1,49 @@
+.side_image {
+  width: 110px;
+  height: 110px;
+  opacity: 0.5;
+  border-radius: 8px;
+}
+
+.side_image_list {
+  list-style: none;
+}
+
+.currently_selected {
+  opacity: 1;
+  border: solid rgb(59, 59, 59);
+  border-width: 0.5px;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 5000ms linear;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 5000ms linear;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 5000ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
