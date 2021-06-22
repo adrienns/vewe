@@ -1,4 +1,4 @@
-# LINK TO SITE
+# Link to the website
 http://vewejewelry.com/
 
 
